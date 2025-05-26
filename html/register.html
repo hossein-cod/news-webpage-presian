@@ -1,0 +1,34 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<form class="box-border max-w-md mx-auto bg-white p-6 rounded shadow-md" action="/register" method="POST">
+  <h2 class="text-2xl font-bold mb-6 text-center">ثبت نام در سایت خبری</h2>
+
+  <label class="block mb-2 font-semibold" for="firstName">نام</label>
+  <input id="firstName" name="firstName" type="text" required
+    class="w-full px-3 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <label class="block mb-2 font-semibold" for="lastName">نام خانوادگی</label>
+  <input id="lastName" name="lastName" type="text" required
+    class="w-full px-3 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <label class="block mb-2 font-semibold" for="email">ایمیل</label>
+  <input id="email" name="email" type="email" required
+    class="w-full px-3 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <label class="block mb-2 font-semibold" for="phone">شماره موبایل</label>
+  <input id="phone" name="phone" type="tel" pattern="09[0-9]{9}" placeholder="مثلاً 09123456789" required
+    class="w-full px-3 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <label class="block mb-2 font-semibold" for="username">نام کاربری</label>
+  <input id="username" name="username" type="text" minlength="4" required
+    class="w-full px-3 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <label class="block mb-2 font-semibold" for="password">رمز عبور</label>
+  <input id="password" name="password" type="password" minlength="6" required
+    class="w-full px-3 py-2 mb-6 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+  <button type="submit"
+    class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors font-semibold">
+    ثبت نام
+  </button>
+</form>
